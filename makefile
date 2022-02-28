@@ -1,5 +1,4 @@
-.PHONY: default, build, run, git, clean
-
+.PHONY: default, build, run, git, clean, runcopy
 default: run
 
 run: build
@@ -7,6 +6,7 @@ run: build
 
 build:
 	pyuic5 -x main.ui -o main.py
+	cp main.py main_copy.py
 
 git:
 	git add *
@@ -16,3 +16,5 @@ git:
 clean:
 	-@rm -f main.py
 
+runcopy:
+	python3 main_copy.py

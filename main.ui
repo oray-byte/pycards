@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>756</width>
+    <height>641</height>
    </rect>
   </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PyCards</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -19,12 +22,56 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>756</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="setMenu">
+    <property name="title">
+     <string>Sets</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="setTest"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="setCreate"/>
+    <addaction name="setImport"/>
+   </widget>
+   <addaction name="setMenu"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="setCreate">
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </action>
+  <action name="setImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="setTest">
+   <property name="text">
+    <string>Test</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
